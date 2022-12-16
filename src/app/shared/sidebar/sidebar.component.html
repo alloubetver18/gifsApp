@@ -1,0 +1,15 @@
+<aside class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">
+      Gifs-App
+    </h3>
+    <hr class="text-white"/>
+    <section class="list-group list-reset">
+      <!-- Los Pipes son herramientas que modifican la apariencia de los componentes en el template, sin modificar la información o los datos en el servicio. -->
+      <a href="#"
+      class="list-group-item list-group-item-action"
+      *ngFor="let elemento of historial"
+      (click)="buscar( elemento )">
+        {{ elemento | titlecase }}
+      </a>
+      </section>
+</aside>
